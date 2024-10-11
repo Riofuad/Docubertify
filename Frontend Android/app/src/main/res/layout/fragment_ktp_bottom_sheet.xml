@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Material3.BottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".ui.fragments.KtpBottomSheetFragment">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_classified_as"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingVertical="50dp"
+                android:text="@string/placeholder_ktp"
+                android:textAlignment="center"
+                android:textColor="@color/darkBlue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:hint="@string/hint_nik"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_name"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_birth"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ti_ktp_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.5"
+                    android:hint="@string/hint_gender"
+                    app:endIconDrawable="@drawable/ic_round_copy"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/darkBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ti_ktp_blood_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hint_blood_type"
+                    app:endIconDrawable="@drawable/ic_round_copy"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/darkBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_address"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_rt_rw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_rt_rw"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_village"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_subdistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_subdistrict"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_religion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_religion"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_marital_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_marital_status"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_job"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_nationality"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ti_ktp_valid_until"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:hint="@string/hint_valid_until"
+                app:endIconDrawable="@drawable/ic_round_copy"
+                app:endIconMode="custom"
+                app:endIconTint="@color/darkBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_ktp_copy_all"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="64dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/btn_copy_all"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

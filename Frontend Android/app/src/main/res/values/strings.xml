@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DocuBERTify</string>
+    <string name="app_version">v1.0</string>
+
+    <string name="btn_start_camera">Start Camera</string>
+    <string name="btn_launch_gallery">Launch Gallery</string>
+    <string name="btn_process">Process</string>
+
+    <string name="placeholder_ktp">Classified as KTP</string>
+    <string name="placeholder_sim">Classified as SIM</string>
+
+    <string name="hint_nik">NIK</string>
+    <string name="hint_name">Nama</string>
+    <string name="hint_birth">Tempat/Tgl Lahir</string>
+    <string name="hint_gender">Jenis Kelamin</string>
+    <string name="hint_blood_type">Gol. Darah</string>
+    <string name="hint_address">Alamat</string>
+    <string name="hint_rt_rw">RT/RW</string>
+    <string name="hint_village">Kel/Desa</string>
+    <string name="hint_subdistrict">Kecamatan</string>
+    <string name="hint_religion">Agama</string>
+    <string name="hint_marital_status">Status Perkawinan</string>
+    <string name="hint_job">Pekerjaan</string>
+    <string name="hint_nationality">Kewarganegaraan</string>
+    <string name="hint_valid_until">Berlaku Hingga</string>
+    <string name="btn_copy_all">Copy All</string>
+    <string name="hint_license_number">No. Lisensi</string>
+    <string name="hint_license_type">Tipe</string>
+    <string name="hint_domicile">Domisili</string>
+
+    <string name="cd_logo_app">Logo App</string>
+    <string name="cd_preview_document">Preview Document</string>
+
+    <string name="loading_msg">Processing the Document…</string>
+</resources>
